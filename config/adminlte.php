@@ -226,11 +226,7 @@ return [
 
     'menu' => [
         // Navbar items:
-        [
-            'type'         => 'navbar-search',
-            'text'         => 'search',
-            'topnav_right' => true,
-        ],
+        
         [
             'type'         => 'fullscreen-widget',
             'topnav_right' => true,
@@ -244,11 +240,36 @@ return [
             'can'  => 'manage-blog',
         ],
         [
-            'text'        => 'pages',
+            'text'        => 'Dashboard',
+            'route'         => 'admin.home.index',
+            'icon'        => 'fas fa-fw fa-tachometer-alt',
+            
+        ],
+        [
+            'text'        => 'Users',
+            'url'         => '',
+            'icon'        => 'fas fa-fw fa-users',
+            
+            
+        ],
+        [
+            'text'        => 'Roles',
+            'url'         => '',
+            'icon'        => 'fas fa-fw fa-user-tag',
+            
+            
+        ],
+        [
+            'text'        => 'Categorias',
             'url'         => 'admin/pages',
-            'icon'        => 'far fa-fw fa-file',
-            'label'       => 4,
-            'label_color' => 'success',
+            'icon'        => 'fab fa-fw fa-buffer',
+            
+        ],
+        [
+            'text'        => 'Sub-Categorias',
+            'url'         => 'admin/pages',
+            'icon'        => 'fas fa-fw fa-stream',
+            
         ],
         ['header' => 'ECOMMERCE OPCIONES'],
         [
