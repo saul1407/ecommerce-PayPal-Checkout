@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\HomeController;
+use App\Http\Controllers\Admin\CategoriasController;
+use App\Http\Controllers\Admin\SubCategoriaController;
 
 
 Route::resource('/', HomeController::class)->names('admin.home');
