@@ -10,4 +10,4 @@ Route::resource('/', HomeController::class)->names('admin.home');
 
 Route::resource('categorias', CategoriasController::class)->names('admin.categorias');
 
-Route::resource('sub-categorias', CategoriasController::class)->names('admin.sub-categorias');
+Route::resource('subcategorias', SubCategoriaController::class)->names('admin.sub-categorias');

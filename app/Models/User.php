@@ -9,6 +9,8 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Sanctum\HasApiTokens;
+use App\Models\Categoria;
+use App\Models\SubCategoria;
 
 class User extends Authenticatable
 {
@@ -62,5 +64,10 @@ class User extends Authenticatable
     public function categorias()
     {
         return $this->hasMany(Categoria::class);
+    }
+
+    public function subcategorias()
+    {
+        return $this->hasMany(SubCategoria::class);
     }
 }

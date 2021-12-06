@@ -261,14 +261,16 @@ return [
         ],
         [
             'text'        => 'Categorias',
-            'url'         => 'admin/categorias*',
+            'url'         => 'admin/categorias',
             'icon'        => 'fab fa-fw fa-buffer',
+            'active'        => ['admin/categorias*']
             
         ],
         [
             'text'        => 'Sub-Categorias',
-            'url'         => 'admin/pages',
+            'url'         => 'admin/subcategorias',
             'icon'        => 'fas fa-fw fa-stream',
+            'active'        => ['admin/subcategorias*']
             
         ],
         ['header' => 'ECOMMERCE OPCIONES'],

@@ -15,4 +15,9 @@ class Categoria extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function subcategorias()
+    {
+        return $this->hasMany(SubCategoria::class);
+    }
 }
